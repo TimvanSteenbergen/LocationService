@@ -1,0 +1,219 @@
+{
+  "RuntimeVersion": "7.8.0",
+  "ProjectID": "d2c2fdab-c49c-8c45-aa27-1796c8c6453e",
+  "ProjectName": "Employee",
+  "ModelVersion": "unversioned",
+  "Description": "",
+  "AdminUser": "MxAdmin",
+  "Roles": {
+    "8dd52bfa-6d7e-453b-b506-303c0a3d9567": {
+      "Name": "Administrator",
+      "ManageableRoles": [
+        "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8"
+      ]
+    },
+    "53f5d6fa-6da9-4a71-b011-454ec052cce8": {
+      "Name": "User",
+      "ManageableRoles": [
+        "53f5d6fa-6da9-4a71-b011-454ec052cce8"
+      ]
+    }
+  },
+  "AdminRole": "8dd52bfa-6d7e-453b-b506-303c0a3d9567",
+  "Constants": [
+    {
+      "Name": "MyFirstModule.WM_GUIDANCE",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "intro:1"
+    },
+    {
+      "Name": "PostalcodeHousenumber.APIkey_NLBAG",
+      "Type": "String",
+      "Description": "As described on https://data.pdok.nl/bag/api/v1/, the apikey is (2017 november) to be requested via mail 'dataplatform@kadaster.nl. It free of charge and only used to prevent abuse of this service. So request your own API-key.",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "PostalcodeHousenumber.apikeydevelopment_password",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "PostalcodeHousenumber.apikeydevelopment_username",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "PostalcodeHousenumber.apikeyproduction_password",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "PostalcodeHousenumber.apikeyproduction_username",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "PostalcodeHousenumber.CA_PreferredSupplier",
+      "Type": "String",
+      "Description": "Canada Post Office",
+      "DefaultValue": "CPO"
+    },
+    {
+      "Name": "PostalcodeHousenumber.endpoint_ALL",
+      "Type": "String",
+      "Description": "Endpoint of the API-service of Zippomoto.",
+      "DefaultValue": "http://api.zippopotam.us"
+    },
+    {
+      "Name": "PostalcodeHousenumber.endpoint_CACPO",
+      "Type": "String",
+      "Description": "For addresses in Canada.",
+      "DefaultValue": "https://ct.soa-gw.canadapost.ca/ot/address/office"
+    },
+    {
+      "Name": "PostalcodeHousenumber.endpoint_NLBAG",
+      "Type": "String",
+      "Description": "The webservice in NL is delivered by BAG: \"Basis Administratie Gebouwen\". This governmental company is part of the \"Kadaster\" and is the responsible party in NL for each building and address and all the data related to those buildings and addresses.\r\n\r\nAll information on their API: https://data.pdok.nl/bag/api/v1\r\n\r\nMore information on the kadaster: https://www.kadaster.nl/-/bag-linked-data-elke-dag-actueel-en-via-een-api-beschikbaar\r\nAnd about their online viewer: https://bagviewer.kadaster.nl/lvbag/bag-viewer",
+      "DefaultValue": "https://bag.basisregistraties.overheid.nl/api/v1/nummeraanduidingen"
+    },
+    {
+      "Name": "PostalcodeHousenumber.endpoint_NLPDOK",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "http://geodata.nationaalgeoregister.nl/locatieserver/v3/"
+    },
+    {
+      "Name": "PostalcodeHousenumber.endpoint_USUSPS",
+      "Type": "String",
+      "Description": "For addresses in the USA.\r\n\r\nI think: https://www.usps.com/business/web-tools-apis/",
+      "DefaultValue": "https://www.usps.com/business/web-tools-apis/"
+    },
+    {
+      "Name": "PostalcodeHousenumber.MaxNrOfReturnedAddresses",
+      "Type": "Integer",
+      "Description": "",
+      "DefaultValue": "10"
+    },
+    {
+      "Name": "PostalcodeHousenumber.NL_PreferredAPISupplier",
+      "Type": "String",
+      "Description": "Currently in NL there are two free suppliers:\r\n- BAG, who is the source of all Dutch addressdata. Needs API-key and certificate and 4 API-calls.\r\n- PDOK, who is a governmental, free and trustworthy supplier and has a simple interface.",
+      "DefaultValue": "'PDOK'"
+    },
+    {
+      "Name": "PostalcodeHousenumber.US_PreferredSupplier",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "USPS"
+    },
+    {
+      "Name": "AddressLookupAPI.InternalKey",
+      "Type": "String",
+      "Description": "PCA predict also provides internal API key and if you are using internal API then you can set that key as default value in this constant.",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "AddressLookupAPI.Key",
+      "Type": "String",
+      "Description": "Set the default value of this constant with the API key provided by PCA Predict.",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "FlatFileInterface.FFI_README_v6_0_0",
+      "Type": "String",
+      "Description": "Version 6.0.0 of the flatfile interface module\r\n\r\nRelease notes:\r\n\r\nThe module was upgraded to be compatible with Mendix 6.10.4\r\n\r\nVersion 5.5.0 of the flatfile interface module\r\n\r\nRelease notes:\r\n1) Upgraded Mendix version to 5.18.0\r\n2) Support for decimal attributes\r\n3) Better transaction management, cofigurable in the import definition\r\n4) Console logging can be switched on and off in the configuration\r\n5) Improved logging mechanism\r\n\r\nVersion 4.3.0 of the flatfile interface module\r\n\r\nDependencies:\r\n1) This module depends on the MxModelReflection module\r\n2) Cloud security will prevent the access to the filesystem, when running in the cloud make sure the policies for the directories used with this module are setup correctly\r\n\r\nSetup: \r\n1) Add the forms in the #Implementation folder to your navigation\r\n2) Add module permissions to a user role in Project --> Security\r\n3) Synchronize objects in the MxModelReflection module\r\n4) Setup the configuration\r\n\r\n\r\n\r\n\r\nRelease notes:\r\nLogging to console via after commit.\r\nFix in java create logMessage crashed (getContext() in stead of newContext) occurs when loglevel is set to info.\r\nAdded import/export via xml.\r\nAdded reset function to file queue\r\nRenamed microflows with execution prefix\r\nFixed typo in filetype enumeration\r\nFixed issue with double quote text qualifier\r\n\r\n\r\n\r\nVersion 4.3.2 of the FFI module includes:\r\n1) Compatible with Mendix 5.9.1\r\n2) Change in InterfaceDefinition form due to upgrade to Mx 5, you should not notice the difference when upgrading (Data will be preserved)\r\n\r\nVersion 4.2.0 of the FFI module includes:\r\n1) Fix for column definition order issue, when rearranging the defined columns the new order was not picked up when importing\r\n2) Feature added to add columns to be skipped easily\r\n3) Added file encoding option to read multibyte characters\r\n\r\n\r\nVersion 4.1.2 of the FFI module includes:\r\n1) Performance fix for cleanup of queued files this could lead to memory issues\r\n2) Performance fix for cleanup logging this cluld lead to memeor issues\r\n\r\nVersion 4.1.01 of the FFI module includes\r\n\r\n1) Stongly improved memory usage\r\n2) Highly improved performance\r\n3) No need for intermediate objects\r\n\r\nRelease notes:\r\nVersion 4.0 of the FFI module includes\r\n\r\n1) Optimization for memory usage for reading large files was implemented by the implementation of transaction management in the jav code.\r\n2) New constants introduced that govern the commit size of the batch processing, the large the size the more memory is used. Change the commit size when having performance issues, but be aware that too large batch sizes might lead to heap space issues and have a nagative impact on performance\r\n3) Saver handling of file handles in the java code.\r\n4) Small validation error fixed when setting up cofigurations using queued files.\r\n5) Added extra annotations and logging to javacode\r\n6) Added linenumbers to fixed length logmessages for enhanced error traceability\r\n7) Several textual issues in NL version fixed\r\n\r\nRelease notes:\r\nVersion 3.0 of the FFI module includes\r\n\r\n1) Optimization of the performance of the delimited file import\r\n\r\n2) In addition to processing files from directories files stored in your Mendix app can be processed directly by placing the files in the entity ProcessFileQueue.\r\nMultiple queues can be created (indicated by an integer). \r\nOn the configuration the choice is made for which queue the configuration will process the files. \r\nWhen files are present in the queue the files will be imported and marked as processed on correct execution of the import. \r\nWhen an error has occurred the file will have an error flag set to true and will no longer be processed. \r\nThe error details are logged in the configuration. \r\nFiles will be deleted from the queue with a scheduled event once a day and the maximum age of a processed file is set in the constant FileQueueAge (default is 1 day). Files with errors during processing will remain in the queue.\r\n\r\nVersion 2.1 of the flatfile interface module.\r\n\r\nDependencies:\r\n1) This module depends on the MxModelReflection module at least  3.0 (18-12-2012)\r\n2) Cloud security will prevent the access to the filesystem, when running in the cloud make sure the policies for the directories used with this module are setup correctly\r\n\r\nSetup: \r\n1) Add the form in the #Implementation folder to your navigation\r\n2) Add module permissions to a user role in Project --> Security\r\n3) Synchronize objects in the MxModelReflection module\r\n4) Setup the configuration\r\n\r\nRelease notes:\r\nVersion 2.1  of the FFI module includes:\r\n1) faster create of records by commiting the data in batches, object are no longer comitted to the database 1 by 1 but in one batch, thereby greatly enhancing the performance\r\n2) debug logging for following the create actions for tracebility\r\n3) delete of imported data does no longer trigger events and does not use standard delete behaviour, resulting in improved performance\r\n\r\nWhen upgrading from a previous version please note that the entity Importedline no longer has the LineFinished Boolean attribute as this is no longer needed.\r\nThe ImportedLine entity no longer uses the events to be processed.\r\n\r\n\r\nVersion 1.1 of the FFI module includes\r\n1) The option to minimize the logging by setting the log level on the definition to Info or Error. With the Error log level only the errors are being stored in the log, with info level all logging is created.\r\n2) The logging has been expanded to inlcude the line number where the error occurred for faster resolution of issues in large files.\r\n3) All column data is removed after successful conversion, minimizing database growth. Only data that could not be converted remains available in the column entity.\r\n\r\nVersion 1.0 \r\nIntial app store release\r\n\r\nVersion 0.2.3.2\r\nAdded option to map boolean fields\r\n\r\nVersion 0.2.3.1\r\nChanged start and end positions for column definition, now by length\r\nOn adding new columns the start position is determined based on previous column\r\nAdded up and down function for delimited column definitions\r\nChanged layout of forms\r\n\r\nVersion 0.2.3 :\r\nSupport for text qualifiers \r\n\r\nVersion 0.2.2.01:\r\nCurrency fields can be mapped\r\nSkipping columns is configurable\r\n\r\n\r\n",
+      "DefaultValue": ""
+    },
+    {
+      "Name": "FlatFileInterface.FileQueueAge",
+      "Type": "Integer",
+      "Description": "Number of days that a processed queued file remains in the queue before it is delete from the queue.\r\nDefault value is: 1",
+      "DefaultValue": "1"
+    },
+    {
+      "Name": "UnitTesting.FindJUnitTests",
+      "Type": "Boolean",
+      "Description": "Set this value to 'True' when you would like to include your available JUnit tests to be found and listed. Leave 'False' otherwise",
+      "DefaultValue": "True"
+    },
+    {
+      "Name": "UnitTesting.RemoteApiEnabled",
+      "Type": "Boolean",
+      "Description": "",
+      "DefaultValue": "False"
+    },
+    {
+      "Name": "UnitTesting.RemoteApiPassword",
+      "Type": "String",
+      "Description": "",
+      "DefaultValue": "1"
+    }
+  ],
+  "ScheduledEvents": [
+    {
+      "Name": "FlatFileInterface.CleanLog",
+      "Description": ""
+    },
+    {
+      "Name": "FlatFileInterface.SE_CleanUpQueues",
+      "Description": ""
+    },
+    {
+      "Name": "FlatFileInterface.SE_ExecuteInterface",
+      "Description": ""
+    }
+  ],
+  "Configuration": {
+    "SourceDatabaseType": "HSQLDB",
+    "SourceDatabaseName": "default",
+    "SourceBuiltInDatabasePath": "model/sampledata/data/database"
+  },
+  "RequestHandlers": [
+    {
+      "Name": "/api/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/link/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/ws-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/odata/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/odata-doc/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/api-doc/",
+      "DefaultEnabled": true,
+      "MatchExactly": false
+    },
+    {
+      "Name": "/p/",
+      "DefaultEnabled": false,
+      "MatchExactly": false
+    }
+  ]
+}

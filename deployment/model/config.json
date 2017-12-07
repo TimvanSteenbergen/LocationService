@@ -1,0 +1,38 @@
+{
+  "Configuration": {
+    "DatabaseName": "PostalcodeHousenumber",
+    "DatabasePassword": "Henka1234!",
+    "DatabaseType": "MYSQL",
+    "DatabaseHost": "localhost",
+    "DatabaseUserName": "root",
+    "DatabaseUseIntegratedSecurity": "False",
+    "ApplicationRootUrl": "http://localhost:8080/",
+    "ScheduledEventExecution": "Specified",
+    "MyScheduledEvents": "FlatFileInterface.SE_ExecuteInterface,FlatFileInterface.CleanLog"
+  },
+  "Constants": {
+    "MyFirstModule.WM_GUIDANCE": "intro:1",
+    "PostalcodeHousenumber.MaxNrOfReturnedAddresses": "10",
+    "PostalcodeHousenumber.endpoint_ALL": "http://api.zippopotam.us",
+    "PostalcodeHousenumber.US_PreferredSupplier": "USPS",
+    "PostalcodeHousenumber.endpoint_USUSPS": "https://www.usps.com/business/web-tools-apis/",
+    "PostalcodeHousenumber.NL_PreferredAPISupplier": "'PDOK'",
+    "PostalcodeHousenumber.endpoint_NLPDOK": "http://geodata.nationaalgeoregister.nl/locatieserver/v3/",
+    "PostalcodeHousenumber.APIkey_NLBAG": "732d44bf-f9fd-4fa5-8ecb-c36dfaea60a5",
+    "PostalcodeHousenumber.endpoint_NLBAG": "https://bag.basisregistraties.overheid.nl/api/v1/nummeraanduidingen",
+    "PostalcodeHousenumber.CA_PreferredSupplier": "CPO",
+    "PostalcodeHousenumber.endpoint_CACPO": "https://ct.soa-gw.canadapost.ca/ot/address/office",
+    "PostalcodeHousenumber.apikeyproduction_username": "2ff8de36dde5a721",
+    "PostalcodeHousenumber.apikeydevelopment_password": "39779a89109b8d631e2f41",
+    "PostalcodeHousenumber.apikeydevelopment_username": "0eed6497026f5330",
+    "PostalcodeHousenumber.apikeyproduction_password": "e8e940e10f9c245405282b",
+    "AddressLookupAPI.InternalKey": "",
+    "AddressLookupAPI.Key": "",
+    "FlatFileInterface.FFI_README_v6_0_0": "",
+    "FlatFileInterface.FileQueueAge": "1",
+    "UnitTesting.FindJUnitTests": "True",
+    "UnitTesting.RemoteApiPassword": "1",
+    "UnitTesting.RemoteApiEnabled": "False"
+  },
+  "AdminPassword": "1"
+}

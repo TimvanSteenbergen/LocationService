@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Simple Menu Bar
+========================================================================== */
+
+.mx-menubar {
+    padding: 0;
+    background-color: $navsidebar-bg;
+    ul.mx-menubar-list {
+        width: 100%;
+        min-height: 50px;
+        table-layout: fixed;
+        li.mx-menubar-item {
+            display: inline-block;
+            width: 100%;
+            margin: 0;
+            a {
+                font-size: $navsidebar-sub-font-size;
+                font-weight: $font-weight-normal;
+                line-height: 50px;
+                display: block;
+                overflow: hidden;
+                padding: 0 8px;
+                text-align: center;
+                vertical-align: middle;
+                color: $navsidebar-color;
+                border-radius: 0;
+                .glyphicon {
+                    font-size: $navsidebar-glyph-size;
+                    top: -1px;
+                    vertical-align: middle;
+                }
+            }
+            a:hover,
+            a:focus,
+            &:hover a,
+            &:focus a,
+            &.active a {
+                text-decoration: none;
+                color: $navsidebar-color-hover;
+                background-color: $navsidebar-bg-hover;
+            }
+            &.active a {
+                color: $navsidebar-color-active;
+                background-color: $navsidebar-bg-active;
+            }
+        }
+    }
+
+    /* remove focus */
+    &:focus {
+        outline: 0;
+    }
+}
+
+// Vertical variation specifics 
+.mx-menubar-vertical {
+    background-color: $navtopbar-bg;
+    ul.mx-menubar-list {
+        li.mx-menubar-item {
+            a {
+                font-size: $navtopbar-font-size;
+                color: $navtopbar-color;
+                border-bottom: 1px solid $navtopbar-border-color;
+                .glyphicon {
+                    font-size: $navtopbar-glyph-size;
+                    top: -1px;
+                    vertical-align: middle;
+                }
+                &:hover,
+                &:focus,
+                &.active {
+                    text-decoration: none;
+                    color: $navtopbar-color-hover;
+                    background-color: $navtopbar-bg-hover;
+                }
+                &.active {
+                    color: $navtopbar-color-active;
+                    background-color: $navtopbar-bg-active;
+                }
+            }
+        }
+    }
+}
+
+// Horizontal variation specifics 
+.mx-menubar-horizontal {
+    background-color: #2D3E4E;
+    box-shadow: 2px 0 4px 0 rgba(0,0,0,0.14);
+    ul.mx-menubar-list {
+        li.mx-menubar-item {
+            width: auto;
+            a {
+                color: #F5F8FD;
+                font-size: 10px;
+            }
+            &.active a {
+                color: $brand-primary;
+                background-color: #283746;
+            }
+        }
+    }
+    /* Two menu items */
+    &.menubar-col-6 ul.mx-menubar-list li.mx-menubar-item {
+        width: 50%;
+    }
+    /* Three menu items */
+    &.menubar-col-4 ul.mx-menubar-list li.mx-menubar-item {
+        width: 33.33333333%;
+    }
+    /* Four menu items */
+    &.menubar-col-3 ul.mx-menubar-list li.mx-menubar-item {
+        width: 25%;
+    }
+    /* Five menu items */
+    &.menubar-col-2 ul.mx-menubar-list li.mx-menubar-item {
+        width: 20%;
+    }
+}
+
+//== Design Properties
+//## Helper classes to change the look and feel of the component
+//-------------------------------------------------------------------------------------------------------------------//
+// Center text and icons
+.bottom-nav-text-icons.mx-menubar {
+    ul.mx-menubar-list {
+        li.mx-menubar-item {
+            a {
+                line-height: normal;
+                padding: 8px 8px 6px 8px;
+                .glyphicon {
+                    font-size: 18px;
+                    display: block;
+                    margin-bottom: 4px;
+                }
+                img {
+                    height: 18px;
+                    margin: auto;
+                    display: block;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+}

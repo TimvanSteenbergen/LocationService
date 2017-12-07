@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Navigation
+
+   Default Mendix Navigation Tree
+========================================================================== */
+
+.mx-navigationtree {
+    background-color: $navsidebar-bg;
+    /* Every navigation item */
+    .navbar-inner ul {
+        margin: 0;
+        padding-left: 0;
+        li {
+            border-style: none;
+            padding: 0;
+            a {
+                font-size: $navsidebar-font-size;
+                font-weight: $font-weight-normal;
+                display: block;
+                padding: 15px;
+                color: $navsidebar-color;
+                border-bottom: 1px solid $navsidebar-border-color;
+                border-radius: 0;
+                background-color: $navsidebar-bg;
+                text-shadow: none;
+                .caret {
+                    border-top-color: $navsidebar-color;
+                    border-bottom-color: $navsidebar-color;
+                }
+                img {
+                    width: 20px; // Default size
+                    height: auto;
+                    margin-right: 4px;
+                }
+                .glyphicon {
+                    font-size: $navsidebar-glyph-size;
+                    top: -1px;
+                    vertical-align: middle;
+                }
+            }
+            a:hover,
+            a:focus,
+            a.active {
+                text-decoration: none;
+                color: $navsidebar-color-hover;
+                background-color: $navsidebar-bg-hover;
+                .caret {
+                    border-top-color: $navsidebar-color-active;
+                    border-bottom-color: $navsidebar-color-active;
+                }
+            }
+            a.active {
+                color: $navsidebar-color-active;
+                border-left-color: $navsidebar-color-active;
+                background-color: $navsidebar-bg-active;
+            }
+        }
+    }
+    /* Sub navigation item specific */
+    li.mx-navigationtree-has-items {
+        > ul {
+            margin: 0;
+            padding-left: 0;
+            background-color: $navsidebar-sub-bg;
+            li {
+                margin: 0;
+                padding: 0;
+                a {
+                    font-size: $navsidebar-sub-font-size;
+                    font-weight: $font-weight-normal;
+                    padding: 12px 20px 12px 25px;
+                    color: $navsidebar-sub-color;
+                    border: 0;
+                    background-color: $navsidebar-sub-bg;
+                    &:hover,
+                    &:focus,
+                    &.active {
+                        color: $navsidebar-sub-color-hover;
+                        background-color: $navsidebar-sub-bg-hover;
+                    }
+                    &.active {
+                        color: $navsidebar-sub-color-active;
+                        border: 0;
+                        background-color: $navsidebar-sub-bg-active;
+                    }
+                }
+            }
+        }
+    }
+    /* remove focus */
+    &:focus {
+        outline: 0;
+    }
+}
+
+//== Design Properties
+//## Helper classes to change the look and feel of the component
+//-------------------------------------------------------------------------------------------------------------------//
+// Content Centerd text and icons
+.nav-content-center-text-icons.mx-navigationtree {
+    .navbar-inner ul {
+        a {
+            text-align: center;
+            .glyphicon {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+// Content Centerd icons only
+.nav-content-center.mx-navigationtree {
+    .navbar-inner ul {
+        a {
+            text-align: center;
+        }
+    }
+}

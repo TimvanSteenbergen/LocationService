@@ -1,0 +1,9 @@
+﻿Buildfile: C:\Users\Tim\Documents\MendixProjects\Employee-main\deployment\build_core.xml
+
+deploy:
+    [unzip] Expanding: C:\Program Files\Mendix\7.8.0\modeler\deployment.mxz into C:\Users\Tim\Documents\MendixProjects\Employee-main\deployment
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+
