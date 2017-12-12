@@ -1,7 +1,0 @@
-﻿Buildfile: C:\Users\Tim\Documents\MendixProjects\Employee-main\deployment\build_core.xml
-
-clean:
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-
