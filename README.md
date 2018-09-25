@@ -2,15 +2,21 @@ Readme
 
 Description
 
-You give this module a country, postalcode and optionally a housenumber and extension and in return you get the Streetname, Cityname and the Geolocation (Longitude and Latitude). Worldwide and in NL free of charge.
+Upon entering a country, postalcode, housenumber and optionally an extension, you will get in return:
+Streetname,
+Cityname
+Geolocation (Longitude and Latitude). 
+
+In NL and LU you will receive the most detailed data. And fully free of charge.
+It is covered worldwide for a broad geolocation.
 
 This module is set-up to use multiple webservice-suppliers. Mostly one or some for each country, or as fallback Zippomoto for worldwide basic data. It is also possible to have a local database for known addresses, reducing API-calls and improving speed (still to implement).
 
-Each supplier has it's own folder in 'AddressInformationSupplier\Country_XY\Supplier' with every supplier-specific element needed.
+Each supplier has it's own module and is being maintained by it's owner. Interfacing is the same for every supplier, the inner workings is upto them.
 
-Help
+Please Help us improve and extend
 
-This AppStore module 'PostalscodeHousenumber' is ready for use and is developing. Everybody is invited to help. Please help, please join if you have anything to add, a bug to report, a feature-request, another service-supplier to add. Here is how:
+This AppStore module 'PostalscodeHousenumber' is ready for use. It as proven it's worth in NL and LU for retrieving streetname, Townshipname and finegraned geolocation. But improvement is always possible and Everybody is invited to help. Please help, please join if you have anything to add, a bug to report, a feature-request, another service-supplier to add. Here is how:
 - Prefered way: mail me your email-address and I will add you to the project. You will have direct insight and can add and work on stories and feature requests.
 - Send your suggestion, ideas and bugreports using the feedback-button.
 - or via Github: request to be added to https://github.com/TimvanSteenbergen/postalcodehousenumber, make your change to the .mkp-file and create a pull-request.
