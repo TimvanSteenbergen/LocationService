@@ -47,15 +47,19 @@ Module Objecthandling, which is required by module Unittesting. Without it, erro
 
 Installation
 
-- Download from the AppStore. 
-- Also download the Apps 'Unittesting' and 'objecthandling'.
-- Assign module roles 'User' and 'Testrunner' to 'User' and module role 'Administrator' and 'Testrunner' to 'Administrator' 
-- Link to your Navigation the page /Demopage/Home
-- Link to your Navigation the page /Administrator/Dashboard
-- Check the Administrators page for further actions.
+- Download from the AppStore;
+- Also download the Apps 'AddressServiceForNlByBAG', 'AddressServiceForNlByPDOK', 'Unittesting' and 'ObjectHandling';
+- Add the TestArea-, Configuration- and Country-snippets in folder /\_UseMe to pages in your application, as you see fit;
+- Add the startup routine ASu_PostalcodeHousenumber to your project's startup routine;
+- Assign project's user roles to the module roles 'administrator' and 'user' as you see fit.
+- Optionally add Luxembourg to the countries:
+-- Import App 'AddressServiceForLuByTieka'
+-- Reïnstall exluded documents 'Snippet_DatasourceTieka_withDependencies' and 'ACT_LU_Tieka_Get_Address_withDependencies' over their original documents 'Snippet_DatasourceTieka' by copy and pasting their contents.
+- Start the App and go to configuration page and set the parameters per country
+- Retrieve API-keys from the Source you use, if a API-key is required. For instance send a mail to dataplatform@kadaster.nl to use PDOK or BAG.
+- Optionally set the parameters for country LU.
 
 Works out of the box. 
-After setting up country an postalcodeFormat information: added functionality
 
 Known bugs
 
