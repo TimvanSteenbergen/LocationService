@@ -59,6 +59,9 @@ Installation
 - Retrieve API-keys from the Source you use, if a API-key is required. For instance send a mail to dataplatform@kadaster.nl to use PDOK or BAG.
 - Optionally set the parameters for country LU.
 
+Using it from your Project
+Pass values for country, postalcode, housenumber and extension to an object of entity Inputparameters and use it to call microflow PostalcodeHousenumber/SUB_Address_RetrieveAddressInformation. You will get the addressinformation containing street, city and geolocation in return.
+
 Works out of the box. 
 
 Known bugs
